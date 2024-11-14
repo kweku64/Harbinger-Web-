@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
+
+/* || RESET  */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* || VARIABLES */
+
+:root {
+  /* FONTS */
+  --FF: "Playfair Display", serif;
+  --FF-HEADINGS: "Playfair Display";
+  --FS: clamp(1rem, 2.2vh, 3rem);
+
+  /* || COLORS */
+  --BGCOLOR: #ffefd5;
+  --BUTTON-COLOR: #002147;
+  --FONT-COLOR: #002147;
+  --LINK-COLOR: #fff;
+  --LINK-ACTIVE: #06021cf8;
+  --LINK-HOVER: #fff;
+  --BUTTON-FONT-COLOR: #fff;
+  /* BORDERS */
+  --BORDER--RADIUS: 0px;
+  /* STANDARD PADDING */
+  --PADDING-TB: 0.75em;
+  --PADDING-SIDE: 2.5%;
+}
+/* || GENERAL STYLES  */
+html {
+  scroll-behavior: smooth;
+  font-family: var(--FF);
+  background-color: var(--BGCOLOR);
+}
+
+/* || LANDING PAGE STYLES */
+.LandingPage {
+  display: flex;
+  height: 100vh;
+}
+.LandingPageWords {
+  border: 2px solid #002147;
+  height: 100vh;
+  width: 50%;
+}
+.LandingPageWords_2 {
+  margin-top: 200px;
+  margin-left: 80px;
+  color: var(--FONT-COLOR);
+}
+.LandingPageButtons {
+  border-radius: var(--BORDER--RADIUS);
+}
+
+.Button1,
+.Button2 {
+  border-radius: var(--BORDER--RADIUS);
+  padding: var(--PADDING-TB);
+  background-color: var(--BUTTON-COLOR);
+  font-style: var(--BUTTON-FONT-COLOR);
+  margin-top: 35px;
+  border: 2px solid #002147;
+}
+
+.LandingPageImages {
+  border: 2px solid #002147;
+  height: 100vh;
+  width: 50%;
+}
+
+.LandingPageWords_2 h1 {
+  border: 2px solid #002147;
+  font-size: 2.9rem;
+  font-family: var(--FF);
+}
+.LandingPageWords_2 p {
+  font-size: 1.35rem;
+  border: 2px solid #002147;
+}
+i {
+  border: 2px solid #002147;
+  margin-top: 70px;
+  padding: 15px;
+  margin-right: 15px;
+}
+
+/* || NAV BAR */
+.Navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding-left: var(--PADDING-SIDE);
+  padding-right: var(--PADDING-SIDE);
+}
+.Navdiv {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+}
+.Logo a {
+  font-size: 45px;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--FONT-COLOR);
+  width: 100%;
+}
+li {
+  list-style-type: none;
+  display: inline-flex;
+  margin-top: 15px;
+  padding-inline: 10px;
+}
+li a {
+  color: var(--FONT-COLOR);
+  font-weight: bold;
+  text-decoration: none;
+}
+ul {
+  padding-left: var(--PADDING-SIDE);
+}
+/* PRODUCTS */
+.Products {
+  border: 2px solid #002147;
+  height: 100vh;
+  color: #002147;
+}
+.Products h1 {
+  text-align: center;
+  font-size: 50px;
+}
+.Columns {
+  display: flex;
+  gap: 0.5em;
+  flex-wrap: wrap;
+}
+
+.ProductImages {
+  width: 15%;
+}
+.ProductImages img {
+  width: 100%;
+  height: auto;
+  min-width: 100px;
+  border: 2px double #002147;
+}
+.Card {
+  border: 2px solid #002147;
+}
+
+/* ABOUT */
+.About {
+  border: 2px solid #002147;
+  height: 100vh;
+  color: #002147;
+  width: 50%;
+}
+.About h1 {
+  margin-top: 150px;
+  font-size: 2.5rem;
+  text-align: center;
+}
+.About p {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.ob {
+  border: 2px dotted #002147;
+  margin: 1em;
+  text-align: left;
+}
+
+/* .columns {
+  columns: 3;
+  column-rule: px solid #002147;
+} */
+
+/* CONTACTS  */
+.Contacts {
+  text-align: center;
+  font-size: 8.5rem;
+  color: #002147;
+  height: 100vh;
+}
